@@ -20,21 +20,23 @@ void main() {
       ),
     );
 
-    testWidgets('Calendar widget has a label on 2022/06', (WidgetTester tester) async {
+    testWidgets('Calendar widget has a label on 2022/06',
+        (WidgetTester tester) async {
       await tester.pumpWidget(app);
 
       // 初期値
       expect(find.byKey(calendarWidgetKey), findsOneWidget);
-      expect(find.text('Mon'), findsOneWidget);
-      expect(find.text('Tue'), findsOneWidget);
-      expect(find.text('Wed'), findsOneWidget);
-      expect(find.text('Thu'), findsOneWidget);
-      expect(find.text('Fri'), findsOneWidget);
-      expect(find.text('Sat'), findsOneWidget);
-      expect(find.text('Sun'), findsOneWidget);
+      expect(find.text('月'), findsOneWidget);
+      expect(find.text('火'), findsOneWidget);
+      expect(find.text('水'), findsOneWidget);
+      expect(find.text('木'), findsOneWidget);
+      expect(find.text('金'), findsOneWidget);
+      expect(find.text('土'), findsOneWidget);
+      expect(find.text('日'), findsOneWidget);
     });
 
-    testWidgets('Calendar widget has a date on 2022/06', (WidgetTester tester) async {
+    testWidgets('Calendar widget has a date on 2022/06',
+        (WidgetTester tester) async {
       await tester.pumpWidget(app);
 
       // 初期値
