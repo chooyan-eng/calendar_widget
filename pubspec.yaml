@@ -14,7 +14,7 @@ dependencies:
 
   calendar_logic:
     path:
-      url: ../calendar_logic
+      ../calendar_logic
 
 dev_dependencies:
   flutter_test:
